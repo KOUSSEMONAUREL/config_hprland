@@ -61,13 +61,13 @@
 		"custom/distro",
 		"custom/right_div#2",
 		"custom/right_inv#1",
-		"idle_inhibitor",
 		"clock#time",
 		"custom/right_div#3",
 		"clock#date",
 		"custom/right_div#4"
 	],
 	"modules-right": [
+		"idle_inhibitor",
 		"hyprland/windowcount",
 		"network",
 		"bluetooth",
