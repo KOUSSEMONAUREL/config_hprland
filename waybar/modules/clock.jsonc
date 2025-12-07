@@ -21,11 +21,9 @@
 		// "menu-actions":
 		// "expand":
 	},
-
 	/*--------------
 	    calendar
 	--------------*/
-
 	"clock#date": {
 		// "interval":
 		"format": "󰸗 {:%m-%d}",
@@ -33,7 +31,7 @@
 		// "timezones":
 		// "locale":
 		"min-length": 8,
-		"max-length": 8,
+		"max-length": 12,
 		// "rotate":
 		// "on-click":
 		// "on-click-middle":
