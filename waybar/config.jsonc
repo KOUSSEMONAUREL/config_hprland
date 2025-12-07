@@ -53,6 +53,8 @@
 		"hyprland/windowcount",
 		"custom/left_div#2",
 		"temperature",
+		"custom/left_div#9",
+		"custom/settings",
 		"custom/left_div#3",
 		"memory",
 		"custom/left_div#4",
@@ -66,8 +68,6 @@
 		"clock#time",
 		"custom/right_div#3",
 		"clock#date",
-		"custom/right_div#3",
-		"clock#date",
 		"custom/right_div#4"
 	],
 	"modules-right": [
@@ -77,8 +77,6 @@
 		"custom/transparency",
 		"custom/left_div#10",
 		"mpris",
-		"custom/left_div#9",
-		"custom/settings",
 		"custom/left_div#6",
 		"group/pulseaudio",
 		"custom/left_div#7",
