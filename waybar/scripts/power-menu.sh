@@ -23,6 +23,7 @@ main() {
 		'Logout'
 		'Hibernate'
 		'Suspend'
+		'Screen Off'
 	)
 	local opts=(
 		'--border=sharp'
@@ -44,6 +45,7 @@ main() {
 		'Logout') loginctl terminate-session "$XDG_SESSION_ID" ;;
 		'Hibernate') systemctl hibernate ;;
 		'Suspend') systemctl suspend ;;
+		'Screen Off') hyprctl dispatch dpms off ;;
 		*) exit 1 ;;
 	esac
 }
