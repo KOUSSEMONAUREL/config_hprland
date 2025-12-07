@@ -22,29 +22,13 @@
 	background-color: @temperature;
 }
 
-/*-----------
-    settings
------------*/
-
-/* Transition Temperature -> Settings */
-#custom-left_div.9 {
-	background-color: @temperature;
-	color: @surface0;
-}
-
-#custom-settings {
-	background-color: @surface0;
-	padding: 0 5px;
-	color: @text;
-}
-
 /*------------
     memory
 ------------*/
 
-/* Transition Settings -> Memory */
+/* Transition Temperature -> Memory */
 #custom-left_div.3 {
-	background-color: @surface0;
+	background-color: @temperature;
 	color: @memory;
 }
 

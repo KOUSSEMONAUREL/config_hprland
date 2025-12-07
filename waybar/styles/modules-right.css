@@ -14,7 +14,8 @@
 #network,
 #bluetooth,
 #custom-system_update,
-#custom-transparency {
+#custom-transparency,
+#custom-settings {
 	background-color: @tray;
 	color: @text;
 	padding: 0 5px;
