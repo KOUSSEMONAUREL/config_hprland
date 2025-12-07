@@ -31,7 +31,8 @@
 		"~/.config/waybar/modules/backlight.jsonc",
 		"~/.config/waybar/modules/battery.jsonc",
 		"~/.config/waybar/modules/custom/power_menu.jsonc",
-		"~/.config/waybar/modules/custom/dividers.jsonc"
+		"~/.config/waybar/modules/custom/dividers.jsonc",
+		"~/.config/waybar/modules/custom/transparency.jsonc"
 		// modules that are not included by default:
 		// "~/.config/waybar/modules/extras/taskbar.jsonc",
 		// "~/.config/waybar/modules/extras/tray.jsonc",
@@ -79,6 +80,7 @@
 		"custom/left_div#8",
 		"battery",
 		"custom/left_inv#2",
+		"custom/transparency",
 		"custom/power_menu"
 	],
 	/*-------------

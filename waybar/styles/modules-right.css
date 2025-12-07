@@ -53,10 +53,22 @@
     power menu
 ----------------*/
 
-#custom-power_menu {
-	border-radius: 16px;
-	padding: 0 19px 0 16px;
+#custom-transparency {
+	background-color: @surface0;
+	padding: 0 10px;
+	color: @text;
+}
+
+#custom-transparency.enabled {
 	color: @accent;
+}
+
+#custom-power_menu {
+	background-color: @critical;
+	padding: 0 10px 0 10px;
+	border-radius: 0 15px 15px 0;
+	margin-right: 15px;
+	color: @main-bg;
 }
 
 #custom-power_menu:hover {
