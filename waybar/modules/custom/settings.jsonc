@@ -1,0 +1,7 @@
+{
+    "custom/settings": {
+        "format": "",
+        "on-click": "~/.config/waybar/scripts/settings_menu.sh",
+        "tooltip": false
+    }
+}

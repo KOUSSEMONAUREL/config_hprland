@@ -2,7 +2,6 @@
 	/*-------------------
 	    left dividers
 	-------------------*/
-
 	"custom/left_div#1": {
 		"format": "",
 		"tooltip": false
@@ -35,7 +34,10 @@
 		"format": "",
 		"tooltip": false
 	},
-
+	"custom/left_div#9": {
+		"format": "",
+		"tooltip": false
+	},
 	// inverse
 	"custom/left_inv#1": {
 		"format": "",
@@ -45,11 +47,9 @@
 		"format": "",
 		"tooltip": false
 	},
-
 	/*--------------------
 	    right dividers
 	--------------------*/
-
 	"custom/right_div#1": {
 		"format": "",
 		"tooltip": false
@@ -70,7 +70,6 @@
 		"format": "",
 		"tooltip": false
 	},
-
 	// inverse
 	"custom/right_inv#1": {
 		"format": "",

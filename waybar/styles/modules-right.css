@@ -7,10 +7,24 @@
 }
 
 /*------------
+    settings
+------------*/
+
+#custom-left_div.9 {
+	color: @surface0;
+}
+
+#custom-settings {
+	background-color: @surface0;
+	padding: 0 5px;
+}
+
+/*------------
     volume
 ------------*/
 
 #custom-left_div.6 {
+	background-color: @surface0;
 	color: @volume;
 }
 
