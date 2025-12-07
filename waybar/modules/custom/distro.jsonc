@@ -15,7 +15,8 @@
 		// "max-length":
 		// "align":
 		// "justify":
-		// "on-click":
+		// "justify":
+		"on-click": "hyprctl dispatch togglespecialworkspace minimized",
 		// "on-click-middle":
 		// "on-click-right":
 		// "on-update":
