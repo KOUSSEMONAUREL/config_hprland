@@ -9,9 +9,11 @@
 #waybar {
 	background-color: @outline;
 }
-#waybar > box {
+
+#waybar>box {
 	margin: 4px;
 	background-color: @main-bg;
+	border-radius: 16px;
 }
 
 button {
@@ -19,6 +21,7 @@ button {
 	min-width: 16px;
 	padding: 0 10px;
 }
+
 button:hover {
 	background-color: @hover-bg;
 	color: @hover-fg;
@@ -29,6 +32,7 @@ tooltip {
 	border-radius: 10px;
 	background-color: @main-bg;
 }
-tooltip > box {
+
+tooltip>box {
 	padding: 0 6px;
 }
