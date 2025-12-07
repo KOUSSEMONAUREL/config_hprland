@@ -56,7 +56,7 @@ set_animated_wallpaper() {
     kill_swaybg
     kill_mpvpaper
     echo "Action : Fond d'écran animé : $video_path" >> "$LOG_FILE"
-    mpvpaper -f -o "no-audio loop" "$MONITOR" "$video_path" &
+    mpvpaper -p -o "no-audio loop --hwdec=auto --hwdec-codecs=all --fps=30" "$MONITOR" "$video_path" &
 }
 
 select_random_video() {
