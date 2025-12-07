@@ -26,7 +26,11 @@
 }
 
 #custom-transparency {
-	padding-right: 8px;
+	padding-right: 0px;
+}
+
+#custom-settings {
+	padding-left: 8px;
 }
 
 /* ------------
