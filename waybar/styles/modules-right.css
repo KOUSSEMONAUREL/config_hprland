@@ -25,6 +25,10 @@
 	color: @accent;
 }
 
+#custom-transparency {
+	margin-right: 8px;
+}
+
 /* ------------
     media info
 ------------ */
