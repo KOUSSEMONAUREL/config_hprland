@@ -66,14 +66,16 @@
 		"clock#time",
 		"custom/right_div#3",
 		"clock#date",
-		"custom/right_div#4",
+		"custom/right_div#3",
+		"clock#date",
+		"custom/right_div#4"
+	],
+	"modules-right": [
 		"network",
 		"bluetooth",
 		"custom/system_update",
 		"custom/transparency",
-		"custom/right_div#5"
-	],
-	"modules-right": [
+		"custom/left_div#10",
 		"mpris",
 		"custom/left_div#9",
 		"custom/settings",

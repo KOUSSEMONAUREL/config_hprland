@@ -38,6 +38,10 @@
 		"format": "",
 		"tooltip": false
 	},
+	"custom/left_div#10": {
+		"format": "",
+		"tooltip": false
+	},
 	// inverse
 	"custom/left_inv#1": {
 		"format": "",

@@ -1,6 +1,32 @@
-/*----------------
+/*-------------
+    connectivity
+-------------*/
+
+/* Le diviseur entre Transparency et le reste (Mpris/Settings) */
+#custom-left_div.10 {
+	background-color: @surface0;
+	/* Couleur de Mpris/Settings? Non, pas de fond pour Mpris... */
+	color: @tray;
+	/* Couleur de Transparency */
+}
+
+/* Le fond commun pour tout le bloc connectivité */
+#network,
+#bluetooth,
+#custom-system_update,
+#custom-transparency {
+	background-color: @tray;
+	color: @text;
+	padding: 0 5px;
+}
+
+#custom-transparency.enabled {
+	color: @accent;
+}
+
+/* ------------
     media info
-----------------*/
+------------ */
 
 #mpris {
 	padding: 0 12px;

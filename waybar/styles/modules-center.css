@@ -129,17 +129,3 @@
 #custom-right_div.5 {
 	color: @tray;
 }
-
-/*----------------------
-    transparency toggle
-----------------------*/
-
-#custom-transparency {
-	background-color: @tray;
-	padding: 0 8px;
-	color: @text;
-}
-
-#custom-transparency.enabled {
-	color: @accent;
-}
