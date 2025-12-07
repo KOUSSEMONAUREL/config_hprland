@@ -50,6 +50,9 @@
 		"hyprland/window"
 	],
 	"modules-center": [
+		"custom/left_div#2",
+		"temperature",
+		"custom/left_div#3",
 		"memory",
 		"custom/left_div#4",
 		"cpu",
@@ -66,9 +69,6 @@
 	],
 	"modules-right": [
 		"hyprland/windowcount",
-		"custom/left_div#2",
-		"temperature",
-		"custom/left_div#3",
 		"network",
 		"bluetooth",
 		"custom/system_update",
