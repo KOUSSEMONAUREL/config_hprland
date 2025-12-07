@@ -102,20 +102,20 @@ set_wallpaper_for_workspace() {
     echo "Changement : workspace $previous_ws -> $workspace_id" >> "$LOG_FILE"
 
     if [[ "$workspace_id" == "1" ]]; then
-        # On va sur workspace 1 : fond statique
+        # On va sur workspace 1 : arrêter vidéo et mettre image statique
+        echo "Workspace 1 : arrêt vidéo, image statique" >> "$LOG_FILE"
+        kill_mpvpaper
         set_static_wallpaper
     else
-        # On va sur workspace != 1
-        if [[ "$previous_ws" == "1" || -z "$previous_ws" ]]; then
-            # On vient du workspace 1 (ou démarrage) : lancer la vidéo
-            local current_video
-            current_video=$(cat "$CURRENT_VIDEO_PATH_FILE" 2>/dev/null)
-            if [[ -n "$current_video" && -f "$current_video" ]]; then
-                set_animated_wallpaper "$current_video"
-            fi
-        else
-            # On passe d'un workspace !=1 à un autre !=1 : ne rien faire
-            echo "Pas de changement de fond (on reste sur vidéo)" >> "$LOG_FILE"
+        # On va sur workspace != 1 : toujours relancer la vidéo
+        echo "Workspace $workspace_id : relance vidéo (économie ressources)" >> "$LOG_FILE"
+        local current_video
+        current_video=$(cat "$CURRENT_VIDEO_PATH_FILE" 2>/dev/null)
+        if [[ -n "$current_video" && -f "$current_video" ]]; then
+            # Arrêter l'ancienne vidéo puis lancer la nouvelle
+            kill_mpvpaper
+            sleep 0.3
+            set_animated_wallpaper "$current_video"
         fi
     fi
 }
