@@ -50,10 +50,6 @@
 		"hyprland/window"
 	],
 	"modules-center": [
-		"hyprland/windowcount",
-		"custom/left_div#2",
-		"temperature",
-		"custom/left_div#3",
 		"memory",
 		"custom/left_div#4",
 		"cpu",
@@ -69,14 +65,17 @@
 		"custom/right_div#4"
 	],
 	"modules-right": [
+		"hyprland/windowcount",
+		"custom/left_div#2",
+		"temperature",
+		"custom/left_div#3",
 		"network",
 		"bluetooth",
 		"custom/system_update",
 		"custom/transparency",
-		"custom/settings",
 		"custom/left_div#10",
 		"mpris",
-		"custom/left_div#6",
+		"custom/settings",
 		"group/pulseaudio",
 		"custom/left_div#7",
 		"backlight",
