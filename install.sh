@@ -40,8 +40,10 @@ PACKAGES=(
     "bluez-utils"
     "blueman"
     "network-manager-applet"
-    "pavucntrol"
+    "pavucontrol"
     "playerctl"
+    "nwg-look"
+    "gnome-disk-utility"
     "ttf-font-awesome"
     "ttf-jetbrains-mono-nerd"
     "noto-fonts-emoji"
@@ -51,7 +53,7 @@ sudo pacman -S --needed --noconfirm "${PACKAGES[@]}"
 
 # 2. Installation des paquets AUR
 echo -e "${BLUE}Installation des paquets AUR (mpvpaper...)${NC}"
-yay -S --needed --noconfirm mpvpaper sddm-git hyprshot
+yay -S --needed --noconfirm mpvpaper sddm-git hyprshot nwg-displays
 
 # 3. Copie des fichiers de configuration
 echo -e "${BLUE}Copie des configurations...${NC}"

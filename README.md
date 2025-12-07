@@ -19,6 +19,12 @@ Focus sur l'esthétique, la performance et l'ergonomie.
   - `Rofi` : Lanceur d'applications
   - `Kitty` : Terminal
   - `Power Menu` : Menu d'arrêt complet
+- **Administration Système** :
+  - `nwg-look` : Apparence (GTK, Icônes, Curseurs)
+  - `nwg-displays` : Gestion des écrans
+  - `pavucontrol` : Mixeur audio
+  - `gnome-disks` : Gestion des disques
+  - `blueman` : Bluetooth
 
 ## 🚀 Installation Rapide
 
