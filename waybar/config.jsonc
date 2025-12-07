@@ -69,6 +69,7 @@
 		"network",
 		"bluetooth",
 		"custom/system_update",
+		"custom/transparency",
 		"custom/right_div#5"
 	],
 	"modules-right": [
@@ -80,7 +81,6 @@
 		"custom/left_div#8",
 		"battery",
 		"custom/left_inv#2",
-		"custom/transparency",
 		"custom/power_menu"
 	],
 	/*-------------
