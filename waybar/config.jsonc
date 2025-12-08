@@ -104,9 +104,11 @@
 	"spacing": 0,
 	// "name":
 	"mode": "dock",
-	// "start_hidden":
+	"start_hidden": true,
+	"ipc": true,
+	"exclusive": false,
+	"passthrough": false,
 	// "modifier-reset":
-	// "exclusive":
 	// "fixed-center":
 	// "passthrough":
 	// "ipc":
