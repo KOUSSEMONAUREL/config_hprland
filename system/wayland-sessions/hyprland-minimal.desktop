@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Hyprland (Minimal)
+Comment=Session Hyprland minimale sans automatismes vidéo
+Exec=/usr/local/bin/hyprland-wrapper minimal
+Type=Application

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Hyprland (Full)
+Comment=Session Hyprland complète avec fond vidéo et terminaux
+Exec=/usr/local/bin/hyprland-wrapper full
+Type=Application

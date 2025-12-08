@@ -1,0 +1,21 @@
+#!/bin/bash
+# Wrapper Hyprland pour gérer les automatismes via SDDM
+# Usage: hyprland-wrapper [minimal|full]
+
+MODE="$1"
+TOGGLE_FILE="/tmp/hypr_automations_toggle"
+
+# Nettoyer l'état précédent
+rm -f "$TOGGLE_FILE"
+
+if [ "$MODE" == "full" ]; then
+    echo "true" > "$TOGGLE_FILE"
+else
+    echo "false" > "$TOGGLE_FILE"
+fi
+
+# Assurer les permissions pour que les scripts utilisateur puissent lire
+chmod 666 "$TOGGLE_FILE"
+
+# Lancer Hyprland
+exec Hyprland

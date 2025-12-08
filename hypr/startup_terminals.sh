@@ -4,7 +4,15 @@
 # It launches three kitty terminals in a specific order with delays
 # to ensure they are tiled correctly.
 
-# 1. Launch the main terminal on the left. This will take the whole screen initially.
+TOGGLE_FILE="/tmp/hypr_automations_toggle"
+
+# Vérification du toggle automatismes
+# Quitter si le fichier existe et contient "false", ou s'il n'existe pas (comportement par défaut)
+# Note: selon la demande user, désactivé par défaut.
+if [ ! -f "$TOGGLE_FILE" ] || grep -q "false" "$TOGGLE_FILE"; then
+    echo "Automatismes désactivés - Pas de lancement des terminaux"
+    exit 0
+fi
 kitty &
 sleep 1
 

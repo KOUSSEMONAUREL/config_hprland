@@ -5,6 +5,18 @@ STATIC_WALLPAPER_DIR="/usr/share/hypr/"
 VIDEO_DIR="/home/aurel/BACK_ALL/"
 LOG_FILE="/home/aurel/wallpaper_manager.log"
 MONITOR="eDP-1"
+# --- Vérification du toggle automatismes ---
+TOGGLE_FILE="/tmp/hypr_automations_toggle"
+# Par défaut désactivé si fichier absent ou contient false
+if [ ! -f "$TOGGLE_FILE" ] || grep -q "false" "$TOGGLE_FILE"; then
+    echo "[$(date)] Automatismes désactivés (Toggle OFF) - Utilisation du fond par défaut uniquement" >> "$LOG_FILE"
+    STATIC_WALLPAPER_PATH=$(find "$STATIC_WALLPAPER_DIR" -type f -name "wall*.png" 2>/dev/null | shuf -n 1)
+    if [[ -z "$STATIC_WALLPAPER_PATH" ]]; then
+        STATIC_WALLPAPER_PATH="/usr/share/hypr/wall0.png"
+    fi
+    swaybg -i "$STATIC_WALLPAPER_PATH" -m fill &
+    exit 0
+fi
 
 # --- Fichiers temporaires et de verrouillage ---
 CURRENT_VIDEO_PATH_FILE="/tmp/hypr_current_video.path"
