@@ -9,13 +9,17 @@ Item {
     property double inputHeight: Screen.height * 0.175 * 0.25 * config.Scale
     property double inputWidth: Screen.width * 0.175 * config.Scale
     
-    // Index des sessions (supposition: 0=Full, 1=Minimal car ordre alpha)
-    // Idéalement on chercherait dans le modèle, mais on simplifie.
+    // Index des sessions (0=Full, 1=Minimal)
     property int sessionFullIndex: 0
     property int sessionMinimalIndex: 1
     
     // État basé sur la session sélectionnée
     property bool automationsEnabled: sessionPanel.session === sessionFullIndex
+    
+    // Forcer le mode Minimal (Désactivé) par défaut au chargement
+    Component.onCompleted: {
+        sessionPanel.sessionList.currentIndex = sessionMinimalIndex;
+    }
 
     Column {
         spacing: 8
@@ -81,12 +85,10 @@ Item {
             
             ToolTip.visible: automationButton.hovered
             ToolTip.delay: 300
-            ToolTip.text: automationsEnabled ? "Automatismes ON (Full Session)" : "Automatismes OFF (Minimal Session)"
+            ToolTip.text: automationsEnabled ? "Automatismes ON" : "Automatismes OFF (Défaut)"
         }
 
         PowerPanel {}
-        
-        // On garde le panel visible pour debug ou si l'user veut changer manuellement
         SessionPanel { id: sessionPanel }
     }
 
