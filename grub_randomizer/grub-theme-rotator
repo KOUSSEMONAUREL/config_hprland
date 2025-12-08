@@ -1,0 +1,25 @@
+#!/bin/bash
+# Select a random dedsec theme folder
+THEMES_DIR="/boot/grub/themes/"
+LINK_NAME="dedsec-random"
+LINK_PATH="/boot/grub/themes/dedsec-random"
+
+# Find all dedsec-* folders (excluding the target dir itself and other themes)
+# We assume folders are named dedsec-*
+THEMES=($(find "$THEMES_DIR" -maxdepth 1 -type d -name "dedsec-*" ! -name "$LINK_NAME"))
+
+if [ ${#THEMES[@]} -eq 0 ]; then
+    echo "No themes found."
+    exit 1
+fi
+
+# Pick random index
+RANDOM_INDEX=$((RANDOM % ${#THEMES[@]}))
+SELECTED="${THEMES[$RANDOM_INDEX]}"
+
+echo "Rotating GRUB theme to: $(basename "$SELECTED")"
+
+# Remove old content
+rm -rf "$LINK_PATH"
+# Copy new content
+cp -r "$SELECTED" "$LINK_PATH"

@@ -1,0 +1,10 @@
+[Unit]
+Description=Rotate GRUB Theme on Boot
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/grub-theme-rotator
+
+[Install]
+WantedBy=multi-user.target
