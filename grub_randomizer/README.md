@@ -15,7 +15,13 @@ Ces scripts ne contiennent PAS les images du thème (trop lourdes).
     ```bash
     git clone https://github.com/KOUSSEMONAUREL/dedsec-grub2-theme.git ~/dedsec-theme
     ```
-    *(Ou utilisez le dépôt officiel `VandalByte/dedsec-grub2-theme`)*
+
+## Code Source Modifié
+
+Le code complet du thème (images + scripts de base) incluant nos modifications (branche `randomizer-setup`) se trouve ici :
+-> **[https://github.com/KOUSSEMONAUREL/dedsec-grub2-theme](https://github.com/KOUSSEMONAUREL/dedsec-grub2-theme)** (Branche: `randomizer-setup`)
+
+C'est ce dépôt qu'il faut cloner pour avoir les assets graphiques.
 
 2.  Copiez le script d'installation dedans :
     ```bash
