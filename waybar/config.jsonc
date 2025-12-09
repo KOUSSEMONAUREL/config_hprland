@@ -20,7 +20,6 @@
 		"~/.config/waybar/modules/memory.jsonc",
 		"~/.config/waybar/modules/cpu.jsonc",
 		"~/.config/waybar/modules/custom/distro.jsonc",
-		"~/.config/waybar/modules/idle_inhibitor.jsonc",
 		"~/.config/waybar/modules/clock.jsonc",
 		"~/.config/waybar/modules/network.jsonc",
 		"~/.config/waybar/modules/bluetooth.jsonc",
@@ -61,7 +60,6 @@
 		"custom/distro",
 		"custom/right_div#2",
 		"custom/right_inv#1",
-		"idle_inhibitor",
 		"clock#time",
 		"custom/right_div#3",
 		"clock#date",
@@ -104,12 +102,9 @@
 	"spacing": 0,
 	// "name":
 	"mode": "dock",
-	"start_hidden": true,
-	"ipc": true,
-	"exclusive": false,
-	"passthrough": false,
+	// "start_hidden":
 	// "modifier-reset":
-	// "fixed-center":
+	// "exclusive":
 	// "passthrough":
 	// "ipc":
 	// "id":
