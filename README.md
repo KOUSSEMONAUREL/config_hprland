@@ -3,7 +3,7 @@
 Ma configuration personnelle pour Hyprland sur Arch Linux.
 Focus sur l'esthétique, la performance et l'ergonomie.
 
-![Hyprland Screen](https://raw.githubusercontent.com/KOUSSEMONAUREL/config_hprland/main/waybar/.github/assets/catppuccin-mocha.png)
+![Waybar Configuration](https://raw.githubusercontent.com/KOUSSEMONAUREL/config_hprland/main/screenshots/waybar-current.png)
 
 ## ✨ Fonctionnalités
 
@@ -19,6 +19,10 @@ Focus sur l'esthétique, la performance et l'ergonomie.
   - `Rofi` : Lanceur d'applications
   - `Kitty` : Terminal
   - `Power Menu` : Menu d'arrêt complet
+- **Optimisation Gaming HiDPI** :
+  - **XWayland zero-scaling** : Désactivation du redimensionnement flou (force_zero_scaling)
+  - **Wine/Bottles** : DPI 144 + Bureau virtuel 1080p
+  - Support FreeType optimisé pour textes nets
 - **Administration Système** :
   - `nwg-look` : Apparence (GTK, Icônes, Curseurs)
   - `nwg-displays` : Gestion des écrans
@@ -53,8 +57,10 @@ Le script se chargera d'installer toutes les dépendances (Pacman + AUR) et de c
 
 **Waybar** :
 - **Logo Arch** : Voir fenêtres minimisées
-- **Bouton Oeil (/)** : Activer/Désactiver transparence
+- **Bouton Oeil (/)** : Activer/Désactiver transparence
+- **Bouton Gamemode (🎮)** : Désactiver veille pour le gaming
 - **Bouton Power** : Menu d'extinction complet
+- **Auto-hide** : La barre se cache automatiquement, `Super+B` pour toggle
 
 ## 🔧 Dépendances Manuelles
 
