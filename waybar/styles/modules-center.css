@@ -3,7 +3,7 @@
 ------------------*/
 
 #windowcount {
-	margin-right: 34px;
+	margin-right: 25px;
 }
 
 #windowcount label {
@@ -104,7 +104,6 @@
 }
 
 #custom-right_div.4 {
-	background-color: @tray;
 	color: @date;
 }
 

@@ -32,7 +32,8 @@
 		"~/.config/waybar/modules/custom/power_menu.jsonc",
 		"~/.config/waybar/modules/custom/dividers.jsonc",
 		"~/.config/waybar/modules/custom/transparency.jsonc",
-		"~/.config/waybar/modules/custom/settings.jsonc"
+		"~/.config/waybar/modules/custom/settings.jsonc",
+		"~/.config/waybar/modules/custom/gamemode.jsonc"
 		// modules that are not included by default:
 		// "~/.config/waybar/modules/extras/taskbar.jsonc",
 		// "~/.config/waybar/modules/extras/tray.jsonc",
@@ -71,6 +72,7 @@
 		"bluetooth",
 		"custom/system_update",
 		"custom/transparency",
+		"custom/gamemode",
 		"custom/left_div#10",
 		"mpris",
 		"custom/settings",
@@ -102,13 +104,13 @@
 	"spacing": 0,
 	// "name":
 	"mode": "dock",
-	// "start_hidden":
+	"start_hidden": true,
 	// "modifier-reset":
 	// "exclusive":
 	// "passthrough":
 	// "ipc":
 	// "id":
-	"reload_style_on_change": true
-	// "on-sigusr1":
+	"reload_style_on_change": true,
+	"on-sigusr1": "toggle"
 	// "on-sigusr2":
 }

@@ -1,0 +1,11 @@
+{
+    "custom/gamemode": {
+        "format": "{}",
+        "exec": "if pgrep -x hypridle > /dev/null; then echo ''; else echo ''; fi",
+        "interval": 2,
+        "on-click": "~/.config/waybar/scripts/gamemode.sh; pkill -SIGRTMIN+1 waybar",
+        "signal": 1,
+        "tooltip": true,
+        "tooltip-format": "Game Mode (Clic pour changer)\n = Veille désactivée\n = Veille activée"
+    }
+}
