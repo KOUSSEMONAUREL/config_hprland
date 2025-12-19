@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+Thumbs.db
+*~
+*.bak
+*.log
+*.save
+*.swp
+
+# Build artifacts
+build/
+dist/
+*.o
+*.so
+*.a
+*.pyc
+__pycache__/
+
+# User specific
+.vscode/
+.idea/
+
+# Large files protection (GitHub limit)
+*.iso
+*.tar.gz
+*.zip
+*.mp4
+*.mov

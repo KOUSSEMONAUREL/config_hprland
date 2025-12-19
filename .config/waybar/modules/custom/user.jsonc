@@ -12,7 +12,6 @@
 			// "click-to-reveal":
 		}
 	},
-
 	"custom/trigger": {
 		// "exec":
 		// "exec-if":
@@ -44,11 +43,9 @@
 		// "menu-actions":
 		// "expand":
 	},
-
 	/*--------------
 	    username
 	--------------*/
-
 	"custom/user": {
 		"exec": "id -un",
 		// "exec-if":

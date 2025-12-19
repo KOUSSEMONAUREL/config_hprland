@@ -12,11 +12,9 @@
 			// "click-to-reveal":
 		}
 	},
-
 	/*-------------------
 	    output device
 	-------------------*/
-
 	"pulseaudio#output": {
 		"format": "{icon} {volume}%",
 		// "format-bluetooth":
@@ -24,7 +22,11 @@
 		// "format-source":
 		// "format-source-muted":
 		"format-icons": {
-			"default": [ "󰕿", "󰖀", "󰕾" ],
+			"default": [
+				"󰕿",
+				"󰖀",
+				"󰕾"
+			],
 			"default-muted": "󰝟",
 			"headphone": "󰋋",
 			"headphone-muted": "󰟎",
@@ -56,11 +58,9 @@
 		// "menu-actions":
 		// "expand":
 	},
-
 	/*----------------
 	    microphone
 	----------------*/
-
 	"pulseaudio#input": {
 		"format": "{format_source}",
 		// "format-bluetooth":
