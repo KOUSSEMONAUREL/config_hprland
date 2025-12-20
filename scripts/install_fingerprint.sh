@@ -7,6 +7,15 @@ NC='\033[0m'
 
 echo -e "${GREEN}=== INSTALLATION LECTEUR EMPREINTE ELAN 04f3:0c8e ===${NC}"
 
+# 0. VERIFICATION DU MATERIEL
+TARGET_ID="04f3:0c8e"
+if ! lsusb -d "$TARGET_ID" &> /dev/null; then
+    echo -e "${RED}ERREUR: Le capteur Elan $TARGET_ID n'est pas détecté sur ce système !${NC}"
+    echo "Ce patch est spécifique à ce matériel. Installation annulée."
+    exit 1
+fi
+echo "Capteur $TARGET_ID détecté. Démarrage de l'installation..."
+
 # 1. DEPENDANCES
 echo "Installation des dépendances..."
 sudo pacman -S --needed base-devel meson ninja libusb glib2 systemd git python-gobject libfprint fprintd
