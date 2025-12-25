@@ -7,12 +7,12 @@
 }
 
 #waybar {
-	background-color: @outline;
+	background-color: transparent;
 }
 
 #waybar>box {
-	margin: 4px;
-	background-color: @main-bg;
+	margin: 5px 10px;
+	background-color: rgba(17, 17, 27, 0.5);
 	border-radius: 16px;
 }
 
