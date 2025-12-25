@@ -1,0 +1,21 @@
+window {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px solid #ffffff;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+button {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    box-shadow: none;
+}
