@@ -1,0 +1,109 @@
+{
+	/*
+	"include": [
+		"~/.config/waybar/modules/*.jsonc",
+		"~/.config/waybar/modules/custom/*.jsonc",
+		"~/.config/waybar/modules/hyprland/*.jsonc"
+
+		// modules that are not included by default:
+		// "~/.config/waybar/modules/extras/*.jsonc"
+	],
+	*/
+	"include": [
+		"~/.config/waybar/modules/custom/user.jsonc",
+		"~/.config/waybar/modules/hyprland/workspaces.jsonc",
+		"~/.config/waybar/modules/hyprland/window.jsonc",
+		"~/.config/waybar/modules/hyprland/windowcount.jsonc",
+		"~/.config/waybar/modules/temperature.jsonc",
+		"~/.config/waybar/modules/memory.jsonc",
+		"~/.config/waybar/modules/cpu.jsonc",
+		"~/.config/waybar/modules/clock.jsonc",
+		"~/.config/waybar/modules/network.jsonc",
+		"~/.config/waybar/modules/bluetooth.jsonc",
+		"~/.config/waybar/modules/mpris.jsonc",
+		"~/.config/waybar/modules/pulseaudio.jsonc",
+		"~/.config/waybar/modules/backlight.jsonc",
+		"~/.config/waybar/modules/battery.jsonc",
+		"~/.config/waybar/modules/custom/dividers.jsonc",
+		"~/.config/waybar/modules/custom/distro.jsonc",
+		"~/.config/waybar/modules/custom/system_update.jsonc",
+		"~/.config/waybar/modules/custom/transparency.jsonc",
+		"~/.config/waybar/modules/custom/gamemode.jsonc",
+		"~/.config/waybar/modules/custom/settings.jsonc",
+		"~/.config/waybar/modules/custom/power_menu.jsonc"
+	],
+	/*------------
+	    layout
+	------------*/
+	"modules-left": [
+		"group/user",
+		"custom/left_div#1",
+		"hyprland/workspaces",
+		"custom/right_div#1",
+		"hyprland/window"
+	],
+	"modules-center": [
+		"custom/left_div#2",
+		"temperature",
+		"custom/left_div#3",
+		"memory",
+		"custom/left_div#4",
+		"cpu",
+		"custom/left_inv#1",
+		"custom/left_div#5",
+		"custom/distro",
+		"custom/right_div#2",
+		"custom/right_inv#1",
+		"clock#time",
+		"custom/right_div#3",
+		"clock#date",
+		"custom/right_div#4"
+	],
+	"modules-right": [
+		"hyprland/windowcount",
+		"network",
+		"bluetooth",
+		"custom/system_update",
+		"custom/transparency",
+		"custom/gamemode",
+		"custom/left_div#10",
+		"mpris",
+		"custom/settings",
+		"group/pulseaudio",
+		"custom/left_div#7",
+		"backlight",
+		"custom/left_div#8",
+		"battery",
+		"custom/left_inv#2",
+		"custom/power_menu"
+	],
+	/*-------------
+	    options
+	-------------*/
+	// "expand-center":
+	// "expand-left":
+	// "expand-right":
+	"layer": "top",
+	// "output":
+	// "position":
+	"height": 0,
+	"width": 0,
+	"margin": 0,
+	// "margin-top":
+	// "margin-left":
+	// "margin-bottom":
+	// "margin-right":
+	// "no-center":
+	"spacing": 0,
+	// "name":
+	// "mode": "hide",
+	"start_hidden": true,
+	// "modifier-reset":
+	// "exclusive":
+	// "passthrough":
+	// "ipc":
+	// "id":
+	"reload_style_on_change": true,
+	"on-sigusr1": "toggle"
+	// "on-sigusr2":
+}

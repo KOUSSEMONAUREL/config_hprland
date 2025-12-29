@@ -1,0 +1,13 @@
+{
+    "custom/transparency": {
+        "exec": "~/.config/waybar/scripts/toggle_transparency.sh status",
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/toggle_transparency.sh toggle",
+        "signal": 10,
+        "format": "{icon}",
+        "format-icons": {
+            "enabled": "",
+            "disabled": ""
+        }
+    }
+}

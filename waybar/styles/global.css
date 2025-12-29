@@ -1,0 +1,38 @@
+* {
+	color: @main-fg;
+}
+
+.module {
+	margin-bottom: -1px;
+}
+
+#waybar {
+	background-color: transparent;
+}
+
+#waybar>box {
+	margin: 5px 10px;
+	background-color: rgba(17, 17, 27, 0.5);
+	border-radius: 16px;
+}
+
+button {
+	border-radius: 16px;
+	min-width: 16px;
+	padding: 0 10px;
+}
+
+button:hover {
+	background-color: @hover-bg;
+	color: @hover-fg;
+}
+
+tooltip {
+	border: 2px solid @main-br;
+	border-radius: 10px;
+	background-color: @main-bg;
+}
+
+tooltip>box {
+	padding: 0 6px;
+}
