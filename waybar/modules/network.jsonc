@@ -1,40 +1,23 @@
 {
 	"network": {
-		// "interface":
-		// "rfkill":
 		"interval": 10,
-		// "family":
-		"format": "󰤨",
-		"format-ethernet": "󰈀",
+		"format": "󰤮",
 		"format-wifi": "{icon}",
-		// "format-linked":
-		"format-disconnected": "󰤯",
+		"format-ethernet": "󰈀",
+		"format-disconnected": "󰤮",
 		"format-disabled": "󰤮",
-		// "format-alt":
+		"format-linked": "󰈀 (No IP)",
 		"format-icons": [
-			"󰤟", "󰤢", "󰤥", "󰤨"
+			"󰤟",
+			"󰤢",
+			"󰤥",
+			"󰤨"
 		],
-		// "rotate":
-		"min-length": 2,
-		"max-length": 2,
-		// "align":
-		// "justify":
-		"on-click": "nm-connection-editor",
-		// "on-click-middle":
+		"on-click": "python3 /home/aurel/.config/waybar/scripts/network_manager.py",
 		"on-click-right": "nmcli radio wifi off && notify-send 'Wi-Fi Disabled' -i 'network-wireless-off' -r 1125",
-		// "on-update":
-		// "on-scroll-up":
-		// "on-scroll-down":
-		// "smooth-scrolling-threshold":
-		// "tooltip":
 		"tooltip-format": "<b>Gateway</b>: {gwaddr}",
-		"tooltip-format-ethernet": "<b>Interface</b>: {ifname}",
 		"tooltip-format-wifi": "<b>Network</b>: {essid}\n<b>IP Addr</b>: {ipaddr}/{cidr}\n<b>Strength</b>: {signalStrength}%\n<b>Frequency</b>: {frequency} GHz",
-		"tooltip-format-disconnected": "Wi-Fi Disconnected",
-		"tooltip-format-disabled": "Wi-Fi Disabled"
-		// "menu":
-		// "menu-file":
-		// "menu-actions":
-		// "expand":
+		"tooltip-format-ethernet": "<b>Interface</b>: {ifname}\n<b>IP Addr</b>: {ipaddr}/{cidr}",
+		"tooltip-format-disconnected": "Disconnected"
 	}
 }
